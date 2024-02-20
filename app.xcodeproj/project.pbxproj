@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		732A7F562B850BFA009BF149 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F552B850BFA009BF149 /* LoginRequest.swift */; };
+		732A7F582B850D77009BF149 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F572B850D77009BF149 /* AuthResponse.swift */; };
+		732A7F5B2B851639009BF149 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F5A2B851639009BF149 /* LoginView.swift */; };
+		732A7F5E2B8519D4009BF149 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F5D2B8519D4009BF149 /* HomeView.swift */; };
+		732A7F612B851BE6009BF149 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F602B851BE6009BF149 /* UserDefaults+Extensions.swift */; };
+		732A7F632B85498B009BF149 /* RiddleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F622B85498B009BF149 /* RiddleListView.swift */; };
+		732A7F652B854D6C009BF149 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F642B854D6C009BF149 /* ProfileView.swift */; };
+		732A7F672B854E9E009BF149 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F662B854E9E009BF149 /* UserDefaultsManager.swift */; };
+		732A7F692B8553AE009BF149 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F682B8553AE009BF149 /* ScoreboardView.swift */; };
+		732A7F6C2B85579A009BF149 /* Riddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F6B2B85579A009BF149 /* Riddle.swift */; };
+		732A7F6F2B8557C4009BF149 /* RiddleUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F6E2B8557C4009BF149 /* RiddleUpload.swift */; };
+		732A7F722B8557EC009BF149 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F712B8557EC009BF149 /* Score.swift */; };
 		73CA5B852B8404B70049570A /* appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA5B842B8404B70049570A /* appApp.swift */; };
 		73CA5B872B8404B70049570A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA5B862B8404B70049570A /* ContentView.swift */; };
 		73CA5B892B8404B80049570A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CA5B882B8404B80049570A /* Assets.xcassets */; };
@@ -34,6 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		732A7F552B850BFA009BF149 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		732A7F572B850D77009BF149 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		732A7F5A2B851639009BF149 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		732A7F5D2B8519D4009BF149 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		732A7F602B851BE6009BF149 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		732A7F622B85498B009BF149 /* RiddleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleListView.swift; sourceTree = "<group>"; };
+		732A7F642B854D6C009BF149 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		732A7F662B854E9E009BF149 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		732A7F682B8553AE009BF149 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
+		732A7F6B2B85579A009BF149 /* Riddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riddle.swift; sourceTree = "<group>"; };
+		732A7F6E2B8557C4009BF149 /* RiddleUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleUpload.swift; sourceTree = "<group>"; };
+		732A7F712B8557EC009BF149 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		73CA5B812B8404B70049570A /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CA5B842B8404B70049570A /* appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appApp.swift; sourceTree = "<group>"; };
 		73CA5B862B8404B70049570A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +96,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		732A7F532B850BCD009BF149 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				732A7F702B8557DD009BF149 /* Score */,
+				732A7F6A2B85577F009BF149 /* Riddle */,
+				732A7F552B850BFA009BF149 /* LoginRequest.swift */,
+				732A7F572B850D77009BF149 /* AuthResponse.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		732A7F592B851620009BF149 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				732A7F5A2B851639009BF149 /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		732A7F5C2B8519BF009BF149 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				732A7F592B851620009BF149 /* Auth */,
+				732A7F5D2B8519D4009BF149 /* HomeView.swift */,
+				732A7F622B85498B009BF149 /* RiddleListView.swift */,
+				732A7F642B854D6C009BF149 /* ProfileView.swift */,
+				732A7F682B8553AE009BF149 /* ScoreboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		732A7F5F2B851BC2009BF149 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				732A7F602B851BE6009BF149 /* UserDefaults+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		732A7F6A2B85577F009BF149 /* Riddle */ = {
+			isa = PBXGroup;
+			children = (
+				732A7F6B2B85579A009BF149 /* Riddle.swift */,
+				732A7F6E2B8557C4009BF149 /* RiddleUpload.swift */,
+			);
+			path = Riddle;
+			sourceTree = "<group>";
+		};
+		732A7F702B8557DD009BF149 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				732A7F712B8557EC009BF149 /* Score.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
 		73CA5B782B8404B70049570A = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +175,15 @@
 		73CA5B832B8404B70049570A /* app */ = {
 			isa = PBXGroup;
 			children = (
+				732A7F5F2B851BC2009BF149 /* Extensions */,
+				732A7F5C2B8519BF009BF149 /* Views */,
+				732A7F532B850BCD009BF149 /* Dto */,
 				73CA5B842B8404B70049570A /* appApp.swift */,
 				73CA5B862B8404B70049570A /* ContentView.swift */,
 				73CA5B882B8404B80049570A /* Assets.xcassets */,
 				73CA5B8A2B8404B80049570A /* app.entitlements */,
 				73CA5B8B2B8404B80049570A /* Preview Content */,
+				732A7F662B854E9E009BF149 /* UserDefaultsManager.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -259,7 +343,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732A7F722B8557EC009BF149 /* Score.swift in Sources */,
+				732A7F562B850BFA009BF149 /* LoginRequest.swift in Sources */,
+				732A7F652B854D6C009BF149 /* ProfileView.swift in Sources */,
 				73CA5B872B8404B70049570A /* ContentView.swift in Sources */,
+				732A7F632B85498B009BF149 /* RiddleListView.swift in Sources */,
+				732A7F6F2B8557C4009BF149 /* RiddleUpload.swift in Sources */,
+				732A7F582B850D77009BF149 /* AuthResponse.swift in Sources */,
+				732A7F6C2B85579A009BF149 /* Riddle.swift in Sources */,
+				732A7F5B2B851639009BF149 /* LoginView.swift in Sources */,
+				732A7F672B854E9E009BF149 /* UserDefaultsManager.swift in Sources */,
+				732A7F612B851BE6009BF149 /* UserDefaults+Extensions.swift in Sources */,
+				732A7F5E2B8519D4009BF149 /* HomeView.swift in Sources */,
+				732A7F692B8553AE009BF149 /* ScoreboardView.swift in Sources */,
 				73CA5B852B8404B70049570A /* appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
