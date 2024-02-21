@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Score: Codable, Identifiable {
-    let id: UUID
+struct Score: Codable {
     let riddleId: UUID
     let userId: UUID
     let hash: String

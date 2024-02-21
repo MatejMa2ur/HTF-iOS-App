@@ -13,11 +13,18 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationView {
-            Button(action: {
-                userDefaultsManager.authResponse = nil
-            }, label: {
-                Text("Logout")
-            })
+            Form{
+                Section{
+                    Text("User: \(userDefaultsManager.authResponse?.email ?? "")")
+                    Text("Nickname: \(userDefaultsManager.authResponse?.nickname ?? "")")
+                }
+                
+                Button(action: {
+                    userDefaultsManager.authResponse = nil
+                }, label: {
+                    Text("Logout")
+                })
+            }
         }
     }
 }

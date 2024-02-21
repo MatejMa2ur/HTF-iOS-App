@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RiddleUpload: Codable, Identifiable {
+struct RiddleUpload: Codable, Identifiable, Hashable {
     let id: UUID
     let url: String
 }

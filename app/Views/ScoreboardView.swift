@@ -10,7 +10,7 @@ import SwiftUI
 struct ScoreboardView: View {
     var body: some View {
         NavigationView {
-            Text("Log In")
+            Text("To be added")
         }
     }
 }

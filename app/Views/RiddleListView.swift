@@ -17,9 +17,24 @@ struct RiddleListView: View {
             if UserDefaults.standard.getAuthResponse() != nil {
                 List {
                     ForEach(riddlesByDifficulty.keys.sorted(), id: \.self) { difficulty in
-                        Section(header: Text(difficulty)) {
+                        Section(header: 
+                        HStack {
+                            Text(difficulty)
+                            Spacer()
+                                Text("\(riddlesByDifficulty[difficulty]!.filter { $0.score != nil }.count) out of \(riddlesByDifficulty[difficulty]!.count)")
+                        }
+                        ) {
                             ForEach(riddlesByDifficulty[difficulty]!, id: \.id) { riddle in
-                                Text(riddle.text)
+                                NavigationLink(destination: RiddleDetailView(riddle: riddle)) {
+                                    HStack {
+                                        Text(riddle.name)
+                                        Spacer()
+                                        if riddle.score != nil {
+                                            Text("✓")
+                                                .foregroundColor(.accentColor)
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -51,14 +66,19 @@ struct RiddleListView: View {
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
                 let decoder = JSONDecoder()
-                if let riddles = try? decoder.decode([Riddle].self, from: data) {
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSxxx"
+                dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+                decoder.dateDecodingStrategy = .formatted(dateFormatter)
+                do {
+                    let riddles = try decoder.decode([Riddle].self, from: data)
                     print("Received \(riddles.count) riddles")
                     DispatchQueue.main.async {
                         completion(riddles)
                     }
-                } else {
-                    print("Failed to decode riddles")
-                }
+                } catch { 
+                    print("Failed to decode riddle JSON: \(error)") }
+                
             } else if let error = error {
                 print("HTTP request failed: \(error)")
             } else {

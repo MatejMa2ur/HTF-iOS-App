@@ -19,6 +19,7 @@
 		732A7F6C2B85579A009BF149 /* Riddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F6B2B85579A009BF149 /* Riddle.swift */; };
 		732A7F6F2B8557C4009BF149 /* RiddleUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F6E2B8557C4009BF149 /* RiddleUpload.swift */; };
 		732A7F722B8557EC009BF149 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F712B8557EC009BF149 /* Score.swift */; };
+		732A7F752B85ECE7009BF149 /* RiddleDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A7F742B85ECE7009BF149 /* RiddleDisplayView.swift */; };
 		73CA5B852B8404B70049570A /* appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA5B842B8404B70049570A /* appApp.swift */; };
 		73CA5B872B8404B70049570A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA5B862B8404B70049570A /* ContentView.swift */; };
 		73CA5B892B8404B80049570A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CA5B882B8404B80049570A /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		732A7F6B2B85579A009BF149 /* Riddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riddle.swift; sourceTree = "<group>"; };
 		732A7F6E2B8557C4009BF149 /* RiddleUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleUpload.swift; sourceTree = "<group>"; };
 		732A7F712B8557EC009BF149 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		732A7F742B85ECE7009BF149 /* RiddleDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleDisplayView.swift; sourceTree = "<group>"; };
 		73CA5B812B8404B70049570A /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CA5B842B8404B70049570A /* appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appApp.swift; sourceTree = "<group>"; };
 		73CA5B862B8404B70049570A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		732A7F5C2B8519BF009BF149 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				732A7F732B85ECD7009BF149 /* Riddle */,
 				732A7F592B851620009BF149 /* Auth */,
 				732A7F5D2B8519D4009BF149 /* HomeView.swift */,
 				732A7F622B85498B009BF149 /* RiddleListView.swift */,
@@ -150,6 +153,14 @@
 				732A7F712B8557EC009BF149 /* Score.swift */,
 			);
 			path = Score;
+			sourceTree = "<group>";
+		};
+		732A7F732B85ECD7009BF149 /* Riddle */ = {
+			isa = PBXGroup;
+			children = (
+				732A7F742B85ECE7009BF149 /* RiddleDisplayView.swift */,
+			);
+			path = Riddle;
 			sourceTree = "<group>";
 		};
 		73CA5B782B8404B70049570A = {
@@ -347,6 +358,7 @@
 				732A7F562B850BFA009BF149 /* LoginRequest.swift in Sources */,
 				732A7F652B854D6C009BF149 /* ProfileView.swift in Sources */,
 				73CA5B872B8404B70049570A /* ContentView.swift in Sources */,
+				732A7F752B85ECE7009BF149 /* RiddleDisplayView.swift in Sources */,
 				732A7F632B85498B009BF149 /* RiddleListView.swift in Sources */,
 				732A7F6F2B8557C4009BF149 /* RiddleUpload.swift in Sources */,
 				732A7F582B850D77009BF149 /* AuthResponse.swift in Sources */,
@@ -427,6 +439,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -488,6 +501,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -515,6 +529,7 @@
 				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"app/Preview Content\"";
 				DEVELOPMENT_TEAM = 29U9229947;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -553,6 +568,7 @@
 				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"app/Preview Content\"";
 				DEVELOPMENT_TEAM = 29U9229947;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -590,6 +606,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 29U9229947;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -613,6 +630,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 29U9229947;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -635,6 +653,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 29U9229947;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -657,6 +676,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 29U9229947;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
